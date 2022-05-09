@@ -22,6 +22,7 @@
         "TVSpreads": {
           "tableName": "TVSpreads",
           "region": "us-west-2",
+          "tables": {"TVSpreads":"tvspreads"},
           "arn": "arn:aws:dynamodb:us-west-2:498231800360:table/TVSpreads",
           "streamArn": "arn:aws:dynamodb:us-west-2:498231800360:table/TVSpreads/stream/2022-05-02T21:01:14.618",
           "partitionKeyName": "Symbol",
