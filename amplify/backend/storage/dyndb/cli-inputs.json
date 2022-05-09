@@ -1,0 +1,10 @@
+{
+  "resourceName": "TVSpreads",
+  "tableName": "TVSpreads",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

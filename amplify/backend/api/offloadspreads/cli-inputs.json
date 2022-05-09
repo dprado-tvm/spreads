@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/spread": {
+      "name": "/spread",
+      "lambdaFunction": "offloadspread",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

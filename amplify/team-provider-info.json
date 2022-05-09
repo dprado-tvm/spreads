@@ -1,0 +1,33 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-offloadspreads-dev-111724-authRole",
+      "UnauthRoleArn": "arn:aws:iam::498231800360:role/amplify-offloadspreads-dev-111724-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::498231800360:role/amplify-offloadspreads-dev-111724-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-offloadspreads-dev-111724-deployment",
+      "UnauthRoleName": "amplify-offloadspreads-dev-111724-unauthRole",
+      "StackName": "amplify-offloadspreads-dev-111724",
+      "StackId": "arn:aws:cloudformation:us-west-2:498231800360:stack/amplify-offloadspreads-dev-111724/c19df950-cfa2-11ec-bef1-02bcfb6dde47",
+      "AmplifyAppId": "d3toc5osd018qf"
+    },
+    "categories": {
+      "function": {
+        "offloadspread": {
+          "deploymentBucketName": "amplify-offloadspreads-dev-111724-deployment",
+          "s3Key": "amplify-builds/offloadspread-3636445636746a796e6e-build.zip"
+        }
+      },
+      "storage": {
+        "TVSpreads": {
+          "tableName": "TVSpreads",
+          "region": "us-west-2",
+          "arn": "arn:aws:dynamodb:us-west-2:498231800360:table/TVSpreads",
+          "streamArn": "arn:aws:dynamodb:us-west-2:498231800360:table/TVSpreads/stream/2022-05-02T21:01:14.618",
+          "partitionKeyName": "Symbol",
+          "partitionKeyType": "S"
+        }
+      }
+    }
+  }
+}
