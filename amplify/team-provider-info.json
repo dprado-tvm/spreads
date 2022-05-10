@@ -15,7 +15,7 @@
       "function": {
         "offloadspread": {
           "deploymentBucketName": "amplify-offloadspreads-dev-111724-deployment",
-          "s3Key": "amplify-builds/offloadspread-3636445636746a796e6e-build.zip"
+          "s3Key": "amplify-builds/offloadspread-304b2b756849445a4e65-build.zip"
         }
       },
       "storage": {
