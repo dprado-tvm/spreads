@@ -16,3 +16,14 @@ def handler(event, context):
     
     for item in resp['Items']:
       print(item)
+      
+    return {
+        "statusCode": 200,
+        "body": json.dumps(item),
+        "headers": {
+            "Access-Control-Allow-Headers": "Content-Type, Access-Control-Allow-Headers",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+            "Content-Type": "application/json",
+        },
+    }
