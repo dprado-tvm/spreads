@@ -1,15 +1,30 @@
 import json
+import boto3
+
+client = boto3.client('dynamodb', region_name='us-west-2')
 
 def handler(event, context):
-  print('received event:')
-  print(event)
-  
-  return {
+  data = client.query(
+    TableName='TVSpreads',
+    IndexName='Symbol',
+    KeyConditionExpression='#name = :value',
+    ExpressionAttributeValues={
+      ':value': {
+        'S': 'shoes'
+      }
+    },
+    ExpressionAttributeNames={
+      '#name': 'name'
+    }
+  )
+
+  response = {
       'statusCode': 200,
+      'body': json.dumps(data),
       'headers': {
-          'Access-Control-Allow-Headers': '*',
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'OPTIONS,POST,GET'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       },
-      'body': json.dumps('Message changes :D!')
   }
+  
+  return response
